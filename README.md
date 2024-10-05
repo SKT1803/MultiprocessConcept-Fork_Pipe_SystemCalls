@@ -43,13 +43,13 @@ given in the following example and should terminate.
 
 <b>Sample Output for 3 input files</b>
 <pre>
-  $ ./numbers.txt                $ ./numbers2.txt                   $ ./ numbers3.txt
-  Input file: numbers.txt        Input file: numbers2.txt           Input file: numbers3.txt
-1 digits - 0                     1 digits - 6                       1 digits - 0
-2 digits - 4                     2 digits – 62                      2 digits - 0
-3 digits - 21                    3 digits – 529                     3 digits - 10
-4 digits - 283                   4 digits – 4875                    4 digits – 58
-5 digits - 692                   5 digits - 13026                   5 digits - 182
-Primes - 108                     Primes - 1986                      Primes - 34
-Nonprimes - 892                  Nonprimes – 16514                  Nonprimes – 216
+  $ ./numbers.txt                  $ ./numbers2.txt                   $ ./ numbers3.txt
+  Input file: numbers.txt          Input file: numbers2.txt           Input file: numbers3.txt
+  1 digits - 0                     1 digits - 6                       1 digits - 0
+  2 digits - 4                     2 digits – 62                      2 digits - 0
+  3 digits - 21                    3 digits – 529                     3 digits - 10
+  4 digits - 283                   4 digits – 4875                    4 digits – 58
+  5 digits - 692                   5 digits - 13026                   5 digits - 182
+  Primes - 108                     Primes - 1986                      Primes - 34
+  Nonprimes - 892                  Nonprimes – 16514                  Nonprimes – 216
 </pre>
