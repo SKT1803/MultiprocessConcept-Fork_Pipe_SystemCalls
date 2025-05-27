@@ -1,4 +1,60 @@
-<h2>Multiprocess concept: fork () and pipe() system calls</h2>
+# Multiprocess Communication in C – Fork & Pipe System Calls
+
+This project demonstrates **inter-process communication (IPC)** between three processes in C using the `fork()` and `pipe()` system calls.
+
+---
+
+
+## Objective
+
+- Create two child processes (`P2`, `P3`) from a **parent process (`P1`)**.
+- Use **four pipes** to enable **bidirectional communication**:
+  - P1 → P2
+  - P1 → P3
+  - P2 → P1
+  - P3 → P1
+- Each process has a specific task:
+  - **P1 (Parent)** reads a file of random integers and distributes them to both children.
+  - **P2** categorizes integers by the number of digits (1–5).
+  - **P3** counts how many numbers are **prime** and **non-prime**.
+
+---
+
+## Structure Overview
+MultiprocessConcept-Fork_Pipe_SystemCalls
+<pre>
+├── forkPipe.c # Main C program with fork() and pipe() logic
+├── README.md # Project documentation (you’re here)
+├── input files/ # Example input files for manual testing
+│ ├── numbers.txt
+│ ├── numbers2.txt
+│ └── numbers3.txt
+├── testIOs/
+│ ├── correctoutputs.txt # Reference outputs
+│ ├── numbers1.txt - numbers10.txt  
+</pre>
+
+
+---
+
+
+All unused pipe ends are closed in each process to ensure proper communication and avoid blocking.
+
+
+##  How to Compile & Run
+
+### Compile
+```bash
+    gcc -o forkPipe forkPipe.c
+```
+Run
+```bash
+  ./forkPipe input\ files/numbers.txt
+```
+
+    
+---
+
 Write a C program, which demonstrates interprocess communicationIPC between three processes using pipes. Your program as the parent process should create two child
 processes and utilize four pipes, establishing a multi-directional communication as shown in the figure below:
 
